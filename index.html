@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"><!--css bootstrap-->
+        <link rel="stylesheet" href="css/style.css"><!--my css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--FontAwesome-->
+    </head>
+    <body class="bg-000 ">
+        <!--search bar-->
+        <header class="width-of-div position-relative d-flex justify-content-center">
+            <div class="container px-0 mt-5 ">
+                <div class="row">
+                    <div class="col-lg-6 mt-4 mb-4">
+                        <input id="getMovies" class="w-100 border-0 p-2 text-center text-777 border-bottom bg-000" placeholder="get movies vote..." type="text">
+                    </div>
+                    <div class="col-lg-6 mt-4 mb-4">
+                        <input id="search" class="w-100 border-0 p-2 text-center text-777 border-bottom bg-000" placeholder="search..." type="text">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--side bar-->
+        <section class="width-of-div position-relative d-flex justify-content-center">
+            <div class="position-fixed h-100 sidebar z-index-1 ">
+                <div class="side-bar-line py-4 position-fixed bg-white  h-100 d-flex flex-column justify-content-between align-items-center">
+                    <img class="w-50" src="/logo.png" alt="logo">
+                    <div>
+                        <i id="sideBarBtn" class="sideBarBtn fs-4 fa fa-align-justify"></i>
+                    </div>
+                    <div class="w-25 ">
+                        <i class="fa mb-2 fs-5 red-hover fa-globe"></i>
+                        <i class="fa mt-2 fs-5 fa-share-alt"></i>
+                    </div>
+                </div>
+                <div id='contactDiv' class="bg-000 h-100 d-flex flex-column justify-content-between ">
+                    <div>
+                        <ul class="mt-4 text-white ">
+                            <li id="sideBarElement" class="position-relative py-2 red-hover">Now Playing</li>
+                            <li id="sideBarElement1" class="position-relative py-2 red-hover">Popular</li>
+                            <li id="sideBarElement2" class="position-relative py-2 red-hover">Top Rated</li>
+                            <li id="sideBarElement3" class="position-relative py-2 red-hover">trending</li>
+                            <li id="sideBarElement4" class="position-relative py-2 red-hover">Upcoming</li>
+                            <li id="sideBarElement5" class="position-relative py-2 red-hover">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="ms-4 text-white mb-3">
+                        <i class="fa px-2 red-hover fa-facebook"></i>
+                        <i class="fa px-2 red-hover fa-twitter"></i>
+                        <i class="fa px-2 red-hover fa-globe"></i>
+                        <p class="mt-3 text-777 w-50">Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!--movies section-->
+        <section class="width-of-div position-relative d-flex justify-content-center">
+            <div class="container  px-0 mt-5 mb-5">
+                <div id="moviess" class="row">
+                </div>
+            </div>
+        </section>
+        <!--Contact Us-->
+        <footer class="width-of-div position-relative d-flex justify-content-center">
+            <div class="container px-0 mt-5 mb-5 ">
+                <h2 class="text-white">Contact Us...</h2>
+                <div class="row">
+                    <!--form contact Us-->
+                    <form class="row g-3" >
+                        <div class="col-lg-6">
+                            <!--input name-->
+                            <input type="text" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput" placeholder="Enter Your Name">
+                            <div class="bg-danger text-center text-white" id="validationDiv">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--input email-->
+                            <input type="email" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput1" placeholder="Enter Your Email">
+                            <div class="bg-danger text-center text-white" id="validationDiv1">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--input phone-->
+                                <input type="number" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput2" placeholder="Enter Phone">
+                                <div class="bg-danger text-center text-white" id="validationDiv2">
+                                </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--input age-->
+                            <input type="number" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput3" placeholder="Enter Age">
+                            <div class="bg-danger text-center text-white" id="validationDiv3">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--input pass-->
+                            <input type="password" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput4" placeholder="Enter Password">
+                            <div class="bg-danger text-center text-white" id="validationDiv4">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!--input rePass-->
+                            <input type="password" class="form-control border-0 p-2 text-white text-center border-bottom bg-000" id="validationInput5" placeholder="Enter RePassword">
+                            <div class="bg-danger text-center text-white" id="validationDiv5">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="px-2 py-1 bg-000 border-1 text-danger rounded border-danger" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script><!--jQuery-->
+        <script src="/js/bootstrap.bundle.min.js"></script><!--js bootstrap-->
+        <script src="/js/mian.js"></script><!--my js-->
+    </body>
+</html>
