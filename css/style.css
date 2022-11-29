@@ -25,9 +25,13 @@ ul {
 }
 ul li {
     top: 1000px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
 }
 .red-hover:hover {
-    color:#ff655ced;
+    color:#ff655ced !important;
 }
 .active {
     left: 0;

@@ -34,12 +34,12 @@
                 <div id='contactDiv' class="bg-000 h-100 d-flex flex-column justify-content-between ">
                     <div>
                         <ul class="mt-4 text-white ">
-                            <li id="sideBarElement" class="position-relative py-2 red-hover">Now Playing</li>
-                            <li id="sideBarElement1" class="position-relative py-2 red-hover">Popular</li>
-                            <li id="sideBarElement2" class="position-relative py-2 red-hover">Top Rated</li>
-                            <li id="sideBarElement3" class="position-relative py-2 red-hover">trending</li>
-                            <li id="sideBarElement4" class="position-relative py-2 red-hover">Upcoming</li>
-                            <li id="sideBarElement5" class="position-relative py-2 red-hover">Contact Us</li>
+                            <li onclick="nowPlaying()" id="sideBarElement" class="position-relative py-2 red-hover">Now Playing</li>
+                            <li onclick="popular()" id="sideBarElement1" class="position-relative py-2 red-hover">Popular</li>
+                            <li onclick="topRated()" id="sideBarElement2" class="position-relative py-2 red-hover">Top Rated</li>
+                            <li onclick="trending()" id="sideBarElement3" class="position-relative py-2 red-hover">trending</li>
+                            <li onclick="upComing()" id="sideBarElement4" class="position-relative py-2 red-hover">Upcoming</li>
+                            <li id="sideBarElement5" class="position-relative py-2 "><a class="text-white red-hover" href="#contact">Contact Us</a> </li>
                         </ul>
                     </div>
                     <div class="ms-4 text-white mb-3">
@@ -60,7 +60,7 @@
             </div>
         </section>
         <!--Contact Us-->
-        <footer class="width-of-div position-relative d-flex justify-content-center">
+        <footer id="contact" class="width-of-div position-relative d-flex justify-content-center">
             <div class="container px-0 mt-5 mb-5 ">
                 <h2 class="text-white">Contact Us...</h2>
                 <div class="row">

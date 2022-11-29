@@ -3,6 +3,15 @@ let URL =   "https://api.themoviedb.org/3/movie/now_playing?api_key=eba8b9a7199e
 //Array of API
 let allMovies =[];
 
+// function ahmed (){
+
+//     https://api.themoviedb.org/3/movie/popular?api_key=eba8b9a7199efdcb0ca1f96879b83c44
+
+//     
+//     
+// }
+
+
 function movies (){
     let http = new XMLHttpRequest()
     http.open('get', URL)
@@ -16,6 +25,28 @@ function movies (){
     })
 }
 movies()
+//side Menu
+function nowPlaying() {
+    URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=eba8b9a7199efdcb0ca1f96879b83c44"
+    movies()
+}
+function popular() {
+    URL = "https://api.themoviedb.org/3/movie/popular?api_key=eba8b9a7199efdcb0ca1f96879b83c44"
+    movies()
+}
+function topRated() {
+    URL = "https://api.themoviedb.org/3/movie/top_rated?api_key=eba8b9a7199efdcb0ca1f96879b83c44"
+    movies()
+}
+function trending() {
+    URL = "https://api.themoviedb.org/3/trending/all/day?api_key=eba8b9a7199efdcb0ca1f96879b83c44"
+    movies()
+}
+function upComing() {
+    URL = "https://api.themoviedb.org/3/movie/upcoming?api_key=eba8b9a7199efdcb0ca1f96879b83c44"
+    movies()
+}
+
 //Add API To Body
 function displayMovies(){
     let movies = ``
