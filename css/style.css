@@ -53,6 +53,13 @@ a{
     .bg-hover {
             width: 96%;
         }
+        .bg-hover h1 {
+            font-size: 50px;
+        }
+        .bg-hover p 
+        {
+            font-size: 20px;
+        }
     .width-of-div {
         width: 70%;
         left: 165px;
